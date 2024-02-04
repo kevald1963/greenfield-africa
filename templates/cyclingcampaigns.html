@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="row">
+
+    <!-- IMAGE -->
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <img class="group-image image-cycling" src="static/images/family_bike_day.jpg"
+             alt="Family bike day">
+    </div>
+    <!-- /.IMAGE -->
+
+    <!-- NEWS PANEL -->
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="news-cycling">
+            <span class="uppercase panel-title">Cycling Campaigns & News</span><br><br>
+            <!-- <<                                                                       >> -->
+            <!-- << INSERT NEWS ARTICLES HERE                                             >> -->
+            <!-- <<                                                                       >> -->
+            <!-- << General instructions for updating content:                            >> -->
+            <!-- <<                                                                       >> -->
+            <!-- << 1. Copy and paste the topmost item between the <a> and </a> tags.     >> -->
+            <!-- << 2. Replace the href with the new website address.                     >> -->
+            <!-- << 3. Replace the description between the <p> and </p> tags.             >> -->
+            <!-- <<                                                                       >> -->
+            <!-- << For content to be shown in modal windows, do as above but replace     >> -->
+            <!-- << the opening <a> tag with following template and customise to suit:    >> -->
+            <!-- << <a href="" data-toggle="modal" data-target="#NameOfModal">            >> -->
+            <!-- << Note that href must be left null. Copy new modal from existing modal  >> -->
+            <!-- << further down in document.                                             >> -->
+
+            <a href="https://newcycling.org/local-organisations-back-low-traffic-neighbourhoods/" target="_blank">
+                <p>Local organisations back low Traffic Neighbourhoods</p>
+            </a>
+
+            <a href="https://newcycling.org/a-gear-change-for-walking-and-cycling-uk-government-announces-ambitious-plans/" target="_blank">
+                <p>A ‘gear change’ for walking and cycling: UK government announces ambitious plans</p>
+            </a>
+
+            <a href="https://www.cyclinguk.org/cycle/cycling-tyne-wear" target="_blank">
+                <p>Cycling in Tyne and Wear</p>
+            </a>
+
+            <a href="https://www.sustrans.org.uk/our-blog/news/2020/november/our-response-to-the-spending-review/" target="_blank">
+                <p>Sustrans response to the November 2020 Spending Review</p>
+            </a>
+
+        </div>
+    </div>
+     <!-- /.NEWS PANEL-->
+
+</section>
+
+{% endblock %}
