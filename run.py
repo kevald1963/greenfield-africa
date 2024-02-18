@@ -228,59 +228,34 @@ def airpollution():
     return render_template("airpollution.html", title="Air Pollution")
 
 
-@app.route('/events')
-def events():
-    return render_template("events.html", title="Events")
-
-
 @app.route('/cyclingcampaigns')
 def cyclingcampaigns():
     return render_template("cyclingcampaigns.html", title="Cycling Campaigns")
 
 
-@app.route('/busnews')
-def busnews():
-    return render_template("busnews.html", title="Bus News")
+@app.route('/buildrefurb')
+def buildrefurb():
+    return render_template("buildrefurb.html", title="Building & Refurbishment")
 
 
-@app.route('/rail')
-def rail():
-    return render_template("rail.html", title="Rail")
+@app.route('/medicalhealthcare')
+def medicalhealthcare():
+    return render_template("medicalhealthcare.html", title="Medical & Healthcare")
 
 
-@app.route('/media')
-def media():
-    return render_template("media.html", title="Media")
+@app.route('/teachingorphanage')
+def teachingorphanage():
+    return render_template("teachingorphanage.html", title="Teaching & Orphanage Childcare")
 
 
-@app.route('/transpcomm')
-def transpcomm():
-    return render_template("transpcomm.html", title="Transport Committee")
+@app.route('/sportsdevelopment')
+def sportsdevelopment():
+    return render_template("sportsdevelopment.html", title="Sports Coaching & Development")
 
 
-@app.route('/pensioners')
-def pensioners():
-    return render_template("pensioners.html", title="Pensioners")
-
-
-@app.route('/disability')
-def disability():
-    return render_template("disability.html", title="Disability")
-
-
-@app.route('/hospitalbuses')
-def hospitalbuses():
-    return render_template("hospitalbuses.html", title="Hospital Buses")
-
-
-@app.route('/reregulation')
-def reregulation():
-    return render_template("reregulation.html", title="Re-regulation")
-
-
-@app.route('/blog')
-def blog():
-    return render_template("blog.html", title="Blog")
+@app.route('/musicdance')
+def musicdance():
+    return render_template("musicdance.html", title="Music, Dance & Art")
 
 
 @app.route('/about')

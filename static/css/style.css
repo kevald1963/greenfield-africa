@@ -6,6 +6,7 @@
     min-height: 100vh;
     margin: 0;
 }
+
 #content-container {
     margin-bottom: 30px;
 }
@@ -37,9 +38,11 @@ ul {
 .inline {
     display: inline;
 }
+
 .panel-title {
     text-align: center;
-    font-weight: bold;
+    font-size: 24px;
+    /* font-weight: bold; */
 }
 
 .email-link i  {
@@ -378,7 +381,7 @@ footer {
     margin-top:0;
 }
 
-/*-------------------------------------------------- Bus Page */
+/*-------------------------------------------------- Activity Pages */
 .image-bus {
     max-width: 100%;
     min-width: 88%;
@@ -392,71 +395,26 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
 }
 
-.news-bus {
-    height: 370px;
+.activity-panel {
+    /* height: 410px; */
     max-width: 576px;
-    background-color: #337ab7;
-    color: #fafafa;
+    /* background-color: #5cb85c; */
+    /* color: #fafafa; */
+    background-color: green;
+    color: white;
     margin: auto;
     margin-top: 15px;
     padding: 2px 2px 5px 5px;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
-.news-bus a {
-    color: #fafafa;
-}
+.building-refurb {
+    height: 410px;
 
-/*-------------------------------------------------- Rail Page */
-.image-rail {
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding: 0;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
-}
-
-.image-rail-metro {
-    max-width: 100%;
-}
-
-.news-rail {
-    height: 370px;
-    max-width: 576px;
-    background-color: #337ab7;
-    color: #fafafa;
-    margin: auto;
-    margin-top: 15px;
-    padding: 2px 2px 5px 5px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
-    overflow-y: auto;
-}
-
-.news-rail a {
-    color: #fafafa;
-}
-
-.image-metro-lobby {
-    min-width: 94%;
-    margin-left: 15px;
-}
-
-.text-metro-lobby {
-    min-height: 338px;
-    margin-top: 15px;
-    margin-right: 0;
-    padding: 5px;
-    background-color: #337ab7;
-    color: #fafafa;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+.medical-healthcare {
+    height: 1800px;
 }
 
 /*-------------------------------------------------- Cycling Page */
