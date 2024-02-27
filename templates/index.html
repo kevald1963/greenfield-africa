@@ -4,10 +4,9 @@
 <section class="row">
 
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
         <!-- VOLUNTEERING PANEL -->
         <div class="local-news">
-            <h3><b>Volunteer with us!</b></h3>
+            <span class="uppercase panel-title">Volunteer with us!</span><br>
 
             <p>Greenfield Africa is a non-profit organisation, that aims to help disadvantaged communities in developing
                countries in Africa through volunteering and fundraising. Although we are small, we pride ourselves on
@@ -46,42 +45,53 @@
             <!-- /.VOLUNTEERING PANEL -->
         </div>
 
-        <!-- DONATION PANEL -->
-        <div class="welcome">
-            <h3><b>Donate to our causes!</b></h3>
-
-            <p>We also give grants to various projects in the country where we have our volunteer programmes. These
-               tend to given for projects that are too remote to send volunteers to, or are given to top up more
-               expensive projects, such as for building materials, where volunteer fees do not fully cover the costs.
-               If you are not able to volunteer, please consider making a donation.
-            </p>
-
-            <p>You can link to our Donation page here >>
-
-            </p>
-        </div>
-        <!-- /.DONATION PANEL -->
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-        <!-- IMAGE -->
-        <img class="group-image" src="static/images/earth_painting.jpg" alt="Painting of Planet Earth on the wall of
-                    Project Elimu centre in Kibra, Nairobi. Caption above the mural is Save Our Planet. Children are
-                    playing in front of the mural.">
-        <!-- /.IMAGE -->
+        <!-- IMAGE CAROUSEL -->
+        <div id="carouselExampleAutoplaying" class="group-image carousel slide" data-bs-ride="carousel">
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                     <img src="static/images/earth_painting.jpg" class="group-image d-block w-100" alt="Painting of Planet Earth on the wall of
+                          Project Elimu centre in Kibra, Nairobi. Caption above the mural is Save Our Planet. Children are
+                          playing in front of the mural.">>
+                </div>
+                <div class="carousel-item">
+                     <img src="static/images/football.jpg" class="group-image d-block w-100" alt="Youths playing
+                        football in Kibra, Nairobi">
+                </div>
+                <div class="carousel-item">
+                     <img src="static/images/outdoor_class.jpg" class="group-image d-block w-100" alt="Students being
+                      taught outside at Mteza LEA school, Mteza village, Malawi.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- /.IMAGE CAROUSEL -->
 
-        <!-- IMAGE -->
-        <img class="group-image" src="static/images/football.jpg" alt="Youths playing football in Kibra, Nairobi">
-        <!-- /.IMAGE -->
+        <!-- DONATION PANEL -->
+        <div class="donation-panel">
+            <span class="uppercase panel-title">Donate to our causes!</span><br>
 
-        <!-- IMAGE -->
-        <img class="group-image" src="static/images/outdoor_class.jpg" alt="Students being taught outside at Mteza
-                    LEA school, Mteza village, Malawi.">
-        <!-- /.IMAGE -->
-
+            <p>We also give grants to various projects in the country where we have our volunteer programmes. These
+               tend to given for projects that are too remote to send volunteers to, or are given to top up more
+               expensive projects, for example for building materials, where volunteer fees do not fully cover the
+               costs. If you are not able to volunteer, please consider making a donation.
+            </p>
+            <p class="inline">
+                You can donate <a class="donation-link" href="{{ url_for('donate') }}"><b>here.</b></a>
+            </p>
+        </div>
+        <!-- /.DONATION PANEL -->
     </div>
-
 
 </section>
 
