@@ -1,5 +1,5 @@
-venv/bin/
-venv/lib/pyvenv.cfg
+.venv/bin/
+.venv/lib/
 .idea/*
 *.batgit
 

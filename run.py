@@ -198,6 +198,16 @@ def index():
     return render_template("index.html", title="Home")
 
 
+@app.route('/ourteam')
+def ourteam():
+    return render_template("index.html", title="Our Team")
+
+
+@app.route('/ourpartners')
+def ourpartners():
+    return render_template("index.html", title="Our Partners")
+
+
 @app.route('/newcastle')
 def newcastle():
     return render_template("newcastle.html", title="Newcastle")
@@ -228,11 +238,6 @@ def airpollution():
     return render_template("airpollution.html", title="Air Pollution")
 
 
-@app.route('/cyclingcampaigns')
-def cyclingcampaigns():
-    return render_template("cyclingcampaigns.html", title="Cycling Campaigns")
-
-
 @app.route('/buildrefurb')
 def buildrefurb():
     return render_template("buildrefurb.html", title="Building & Refurbishment")
@@ -248,9 +253,9 @@ def teachingorphanage():
     return render_template("teachingorphanage.html", title="Teaching & Orphanage Childcare")
 
 
-@app.route('/sportsdevelopment')
-def sportsdevelopment():
-    return render_template("sportsdevelopment.html", title="Sports Coaching & Development")
+@app.route('/sportscoaching')
+def sportscoaching():
+    return render_template("sportscoaching.html", title="Sports Coaching & Development")
 
 
 @app.route('/musicdance')
@@ -258,9 +263,9 @@ def musicdance():
     return render_template("musicdance.html", title="Music, Dance & Art")
 
 
-@app.route('/about')
-def about():
-    return render_template("about.html", title="About")
+@app.route('/donate')
+def donate():
+    return render_template("donate.html", title="Donate")
 
 
 if __name__ == '__main__':
