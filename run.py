@@ -25,29 +25,19 @@ def ourpartners():
     return render_template("index.html", title="Our Partners")
 
 
-@app.route('/newcastle')
-def newcastle():
-    return render_template("newcastle.html", title="Newcastle")
+@app.route('/ghana')
+def ghana():
+    return render_template("ghana.html", title="Ghana")
 
 
-@app.route('/gateshead')
-def gateshead():
-    return render_template("gateshead.html", title="Gateshead")
+@app.route('/kenya')
+def kenya():
+    return render_template("kenya.html", title="Kenya")
 
 
-@app.route('/northtyneside')
-def northtyneside():
-    return render_template("northtyneside.html", title="North Tyneside")
-
-
-@app.route('/southtyneside')
-def southtyneside():
-    return render_template("southtyneside.html", title="South Tyneside")
-
-
-@app.route('/sunderland')
-def sunderland():
-    return render_template("sunderland.html", title="Sunderland")
+@app.route('/malawi')
+def malawi():
+    return render_template("malawi.html", title="Malawi")
 
 
 @app.route('/airpollution')
