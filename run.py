@@ -9,6 +9,7 @@ app.secret_key = SECRET_KEY
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 app.config.from_object(__name__)
 
+
 @app.route('/')
 def index():
     return render_template("index.html", title="Home")
@@ -87,6 +88,7 @@ def donate():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+
 
 """    app.run(host=os.environ.get('IP'),
             port=os.environ.get('PORT'),
