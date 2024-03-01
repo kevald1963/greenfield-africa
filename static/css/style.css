@@ -39,25 +39,25 @@ ul {
     display: inline;
 }
 
-.donation-link {
+.general-link {
   color: yellow;
   background-color: transparent;
   text-decoration: none;
 }
 
-.donation-link:visited {
+.general-link:visited {
   color: pink;
   background-color: transparent;
   text-decoration: none;
 }
 
-.donation-link::hover {
+.general-link:hover {
   color: red;
   background-color: transparent;
   text-decoration: underline;
 }
 
-.donation-link::active {
+.general-link:active {
   color: white;
   background-color: transparent;
   text-decoration: underline;
