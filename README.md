@@ -2,19 +2,8 @@
 
 ## Introduction
 
-### Organisatio Overview
+### Organisation Overview
 
-Tyne & Wear Passenger Transport Users Group (TWPTUG) is voluntary community group that campaigns for the full integration of public transport 
-in Tyne & Wear, such as rail, Metro, bus and ferry with private transport modes such as of walking, cycling and driving. TWPTUG believes such 
-integration can only be achieved through local public ownership of public transport. TWPTUG covers the five boroughs of Tyne & Wear, namely 
-Newcastle, Gateshead, North Tyneside, South Tyneside and Sunderland. Only Newcastle and North Tyneside are running at the moment. Gateshead and
-South Shields did start up but have since stopped due to various reasons like members moving out of the area, ill-health, and the distraction
-of other issues affecting the community like hospital closures. TWPTUG is run by a Management Committee, the members of which are elected 
-by individuals within the local groups and partner organisations. TWPTUG’s members include individuals as well as a number of partner 
-organisations such as cycling groups, pensioners’ groups, union community branches and other community transport groups from across the UK. 
-TWPTUG also works closely with bus operating companies, local authorities and Nexus to influence general transport policy. Nexus is the Passenger 
-Transport Executive for Tyne & Wear, which directly operates the Metro and the Shields Ferry on behalf of the five boroughs and secures some 
-essential local bus services ran by the private bus operators.
 
 ### Website Purpose
 
