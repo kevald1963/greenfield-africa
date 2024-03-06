@@ -398,6 +398,21 @@ footer {
     margin-top:0;
 }
 
+/*-------------------------------------------------- Gallery Page */
+.image-gallery {
+    height: 500px;
+    max-width: 100%;
+    min-width: 88%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
 /*-------------------------------------------------- Activity Pages */
 .image-activity {
     max-width: 100%;

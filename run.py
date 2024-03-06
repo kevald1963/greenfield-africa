@@ -17,7 +17,7 @@ def index():
 
 @app.route('/ourteam')
 def ourteam():
-    return render_template("index.html", title="Our Team")
+    return render_template("ourteam.html", title="Our Team")
 
 
 @app.route('/ourpartners')
