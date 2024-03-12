@@ -20,9 +20,9 @@ def ourteam():
     return render_template("ourteam.html", title="Our Team")
 
 
-@app.route('/ourpartners')
-def ourpartners():
-    return render_template("index.html", title="Our Partners")
+@app.route('/ourorganisation')
+def ourorganisation():
+    return render_template("ourorganisation.html", title="Our Organisation")
 
 
 @app.route('/ghana')
@@ -68,6 +68,11 @@ def sportscoaching():
 @app.route('/musicdance')
 def musicdance():
     return render_template("musicdance.html", title="Music, Dance & Art")
+
+
+@app.route('/applytovolunteer')
+def applytovolunteer():
+    return render_template("applytovolunteer.html", title="Apply to Volunteer")
 
 
 @app.route('/donate')
