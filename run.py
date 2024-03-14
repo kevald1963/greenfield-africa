@@ -40,11 +40,6 @@ def malawi():
     return render_template("malawi.html", title="Malawi")
 
 
-@app.route('/airpollution')
-def airpollution():
-    return render_template("airpollution.html", title="Air Pollution")
-
-
 @app.route('/buildrefurb')
 def buildrefurb():
     return render_template("buildrefurb.html", title="Building & Refurbishment")
