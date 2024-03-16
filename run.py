@@ -64,6 +64,10 @@ def sportscoaching():
 def musicdance():
     return render_template("musicdance.html", title="Music, Dance & Art")
 
+@app.route('/feescosts')
+def feescosts():
+    return render_template("feescosts.html", title="Fees & Costs")
+
 
 @app.route('/applytovolunteer')
 def applytovolunteer():

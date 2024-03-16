@@ -9,7 +9,7 @@
     <!-- /.HISTORY -->
 
     <title>Greenfield Africa Foundation | {{ title }}</title>
-
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
     <meta name="description" content="Greenfield Africa is a development charity that provides funding and sends
                 international volunteers to poor and disadvantaged communities in Africa.">
     <meta name="keywords" content="Greenfield, Africa, Ghana, Kenya, Malawi, volunteering, volunteer, NGO,
@@ -28,36 +28,30 @@
     <div id="page-container">
         <div id="content-container">
 
-            <!-- HEADER -->
-            <header class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 page-title">
-                        <h1>Greenfield Africa - volunteer with us!</h1>
-                    </div>
-                </div>
-            </header>
-            <!-- /.HEADER -->
-
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-color: green;" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-brand mb-0 h1"> Greenfield Africa</span> -->
+                    <img src="static/images/greenfield_africa_logo.jpg" alt="Greenfield Africa" width="245" height="65">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <!-- HOME -->
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{{ url_for('index') }}"><h4>  Home</h4></a>
+                                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
+                                    Home
+                                </a>
                             </li>
 
                             <!-- ABOUT US -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <h4>  About Us</h4>
+                                    About Us
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" data-bs-theme="light">
                                     <li><a class="dropdown-item" href="{{ url_for('ourteam') }}">Our Team</a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('ourorganisation') }}">Our Organisation</a></li>
                                 </ul>
@@ -66,9 +60,9 @@
                             <!-- DESTINATIONS -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <h4>  Destinations</h4>
+                                    Destinations
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" data-bs-theme="light">
                                     <li><a class="dropdown-item" href="{{ url_for('ghana') }}">Ghana</a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('kenya') }}">Kenya</a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('malawi') }}">Malawi</a></li>
@@ -78,28 +72,28 @@
                             <!-- VOLUNTEERING -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <h4>  Volunteering</h4>
-                                </a>
-                                <ul class="dropdown-menu">
+                                    Volunteering</a>
+                                <ul class="dropdown-menu" data-bs-theme="light">
                                     <li><a class="dropdown-item" href="{{ url_for('buildrefurb') }}"><span>Building & Refurbishment</span></a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('medicalhealthcare') }}"><span>Medical & Healthcare</span></a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('teachingorphanage') }}"><span>Teaching & Orphanage Childcare</span></a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('sportscoaching') }}"><span>Sports Coaching & Development</span></a></li>
                                     <li><a class="dropdown-item" href="{{ url_for('musicdance') }}"><span>Music, Dance & Art</span></a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="{{ url_for('feescosts') }}"><span>Fees & Costs</span></a></li>
                                     <li><a class="dropdown-item highlight-text" href="{{ url_for('applytovolunteer') }}"><span><b>Apply to Volunteer</b></span></a></li>
                                 </ul>
                             </li>
                         </ul>
 
+                        <!-- DONATE BUTTON -->
                         <ul class="navbar-nav ms-auto">
-                            <!-- DONATE BUTTON -->
                             <li class="nav-item">
                                 <button type="button" class="btn donation-button">
-                                    <a class="nav-link" href="{{ url_for('donate') }}"><h4>  Donate</h4></a>
+                                    <a class="nav-link" href="{{ url_for('donate') }}">Donate</a>
                                 </button>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
@@ -118,7 +112,7 @@
             <!-- Split Footer into three columns. -->
             <div class="row">
 
-                <!-- About -->
+                <!-- ABOUT -->
                 <div class="col-xs-12 col-sm-12 col-md-4">
                     <h5 class="uppercase footer">About</h5>
                     <p class="inline-block">
@@ -126,33 +120,38 @@
                         programmes to help disadvantaged communities in Africa, in both rural and urban settings.
                     </p>
                 </div>
+                <!-- ./ABOUT -->
 
-                <!-- Contact -->
                 <div class="col-md-4">
+                    <!-- EMAIL US -->
                     <h5 class="uppercase footer">Email us</h5>
                     <p class="inline-block">
                         Any questions about Greenfield Africa?<br>
-                        <!--Email us here.<a href="" class="email-link" data-toggle="modal" data-target="#emailModal"><i class="fa fa-envelope" aria-hidden="true"></i></a>-->
                         Email our Country Directors as follows:<br>
-                        Ghana: <a class="email-link-footer" href="mailto:gideon.korda@yahoo.com">gideon.korda@yahoo.com</a><br>
-                        United Kingdom: <a class="email-link-footer" href="mailto:kevin_alderson@yahoo.co.uk">kevin_alderson@yahoo.co.uk</a><br>
+                        Ghana: <a class="footer-link" href="mailto:gideon.korda@yahoo.com">gideon.korda@yahoo.com</a><br>
+                        United Kingdom: <a class="footer-link" href="mailto:kevin_alderson@yahoo.co.uk">kevin_alderson@yahoo.co.uk</a><br>
                         Want to report a website issue?<br>
-                        Email our Web Manager: <a class="email-link-footer" href="mailto:kevin_alderson@yahoo.co.uk">kevin_alderson@yahoo.co.uk</a>
+                        Email our Web Manager: <a class="footer-link" href="mailto:kevin_alderson@yahoo.co.uk">kevin_alderson@yahoo.co.uk</a>
                     </p>
+                    <!-- /.EMAIL US -->
                 </div>
 
-                <!-- Social Media -->
                 <div class="col-md-4">
+                    <!-- PHONE US -->
+                    <h5 class="uppercase footer">Phone us</h5>
+                    <p class="inline-block">
+                        Ghana: <a class="footer-link" href="tel:+233246608714">+233 246 608714</a><br>
+                        UK: <a class="footer-link" href="tel:+447957520067">+44 7957 520067</a><br>
+                    </p>
+                    <!-- /.PHONE US -->
+
+                    <!-- SOCIAL MEDIA -->
                     <h5 class="uppercase footer">Facebook</h5>
-                    <!-- 'list-inline' is a Bootstrap class. -->
-                    <ul class="list-inline">
-                        <li>
-                            <a class="general-link" target="_blank" href="https://www.facebook.com/GreenfieldAfrica.Gh">Greenfield Africa Foundation</a>
-                        </li>
-                        <li>
-                            <a class="general-link" target="_blank" href="https://www.facebook.com/GreenfieldUK">Greenfield Africa UK</a>
-                        </li>
-                    </ul>
+                    <p class="inline-block">
+                        Ghana: <a class="footer-link" target="_blank" href="https://www.facebook.com/GreenfieldAfrica.Gh">Greenfield Africa Foundation</a><br>
+                        UK: <a class="footer-link" target="_blank" href="https://www.facebook.com/GreenfieldUK">Greenfield Africa UK</a>
+                    </p>
+                    <!-- /.SOCIAL MEDIA -->
                 </div>
             </div>
         </footer>
