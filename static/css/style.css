@@ -48,7 +48,7 @@ ul {
 }
 
 .general-link {
-  color: yellow;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -66,9 +66,9 @@ ul {
 }
 
 .general-link:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 .panel-title {
@@ -76,14 +76,16 @@ ul {
     font-size: 24px;
 }
 
-.email-link i  {
+.email-link  {
     color: #fafafa;
     text-align: center;
     padding-left: 5px;
 }
 
-.email-link i:hover {
-    color: #f0ad4e;
+.email-link:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
