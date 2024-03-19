@@ -47,6 +47,10 @@ ul {
     display: inline;
 }
 
+.list-item-margin li {
+    margin-bottom: 10px;
+}
+
 .general-link {
   color: white;
   background-color: transparent;
