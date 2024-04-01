@@ -299,6 +299,12 @@ footer {
 .wide-panel {
     max-width: 1200px;
 }
+
+.deep-margins {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .orange-panel {
     background-color: #f0ad4e;
     color: black;
