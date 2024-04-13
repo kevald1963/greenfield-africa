@@ -6,6 +6,7 @@
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
         <!-- IMAGE CAROUSEL -->
+        <!--The div below is always the 1st element in the column, regardless of viewport size. -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
 
@@ -59,125 +60,35 @@
         </div>
         <!-- /.IMAGE CAROUSEL -->
 
-        <!-- VOLUNTEERING PANEL #1-->
+        <!-- TEXT PANEL - VOLUNTEER #1 -->
+        <!-- This div is both the 2nd element in the column and page, for xs & sm viewport sizes. -->
+        <!-- It is hidden for viewport sizes above md. -->
         <div class="general-panel orange-panel flex-with-text d-md-none">
             <div class="uppercase panel-title">Volunteer with us!</div>
-            <p>
-                If you are 18 or over you can apply to volunteer with us.
-                Greenfield Africa is a non-profit organisation that aims to help disadvantaged communities in developing
-                countries in Africa through volunteering and fundraising. Although we are small, we pride ourselves on
-                providing a safe, fulfilling and enjoyable experience for our volunteers. Gideon Korda, our founder, and
-                project manager for all volunteer destinations, has many years of experience running volunteering
-                projects and is completely committed to the welfare of our volunteers while on placement.
-            </p>
-            <p>
-                Also, two of our English-speaking directors, Kevin Alderson and Hannah Price, have spent time
-                in Ghana as volunteers themselves. Kevin was involved mainly in building, but also did some teaching.
-                Hannah is a medical doctor and volunteered in a hospital. Both directors are willing to respond to
-                any queries concerning these particular placements or, indeed, any aspect of volunteering
-                with Greenfield Africa.
-            </p>
-
-            <p><b>New destinations for 2024!</b> Come and volunteer in Ghana, Kenya or Malawi and make a world of difference
-               to the disadvantaged communities in Africa! Our volunteer programmes include working on a variety of
-               activities as follows:
-            </p>
-
-            <ul>
-                <li>Building & Refurbishment</li>
-                <li>Medical & Healthcare</li>
-                <li>Teaching & Orphanage Childcare</li>
-                <li>Sports Coaching & Development</li>
-                <li>Dance, Music & Art</li>
-            </ul>
-
-            <p>
-                Volunteers with, or without, expertise in these fields are ALL welcome, as there are a variety of
-                levels in which assistance can be given. Volunteers may be allowed to be involved in more than
-                one project during their visit, subject to their length of stay, placement availability, distance between
-                projects, etc. Please note that volunteering opportunities may vary between destinations, and these
-                may vary over time. For example, building and refurbishment projects are not necessarily continuous in
-                a particular destination.
-            </p>
+            {% include 'subtemplates/volunteerpanel.html' %}
         </div>
-        <!-- /.VOLUNTEERING PANEL #1 -->
+        <!-- /.TEXT PANEL - VOLUNTEER #1 -->
 
-        <!-- DONATION PANEL #1 -->
+        <!-- TEXT PANEL - DONATE #1 -->
+        <!-- This div is the 3rd element in the page for xs & sm viewport sizes. -->
+        <!-- It becomes the 2nd element in the page for viewport sizes above md. -->
         <div class="general-panel green-panel flex-with-text">
             <div class="uppercase panel-title">Donate to our causes!</div>
-            <p>
-                We give grants to various projects in the country where we have our volunteer programmes. These
-                tend to be for projects that are too remote to send volunteers to, or to top up more expensive
-                projects, for example to pay for building materials, where volunteer fees do not fully cover the
-                costs. If you are not able to volunteer, please consider making a donation.
-            </p>
-            <p class="inline">
-                You can donate <a class="general-link" href="{{ url_for('donate') }}"><b>here.</b></a>
-            </p>
+            {% include 'subtemplates/donatepanel.html' %}
         </div>
-        <!-- /.DONATION PANEL #1 -->
+        <!-- /.TEXT PANEL - DONATE #1 -->
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-        <!-- VOLUNTEERING PANEL #2 -->
+        <!-- TEXT PANEL - VOLUNTEER #2 -->
+        <!-- This div is the 1st element in this column, for md+ viewport sizes. -->
+        <!-- It is hidden for viewport sizes below md. -->
         <div class="general-panel orange-panel flex-with-text d-none d-md-block">
             <div class="uppercase panel-title">Volunteer with us!</div>
-            <p>
-                If you are 18 or over you can apply to volunteer with us.
-                Greenfield Africa is a non-profit organisation, that aims to help disadvantaged communities in developing
-                countries in Africa through volunteering and fundraising. Although we are small, we pride ourselves on
-                providing a safe, fulfilling and enjoyable experience for our volunteers. Gideon Korda, our founder, and
-                project manager for all volunteer destinations, has many years of experience running volunteering
-                projects and is completely committed to the welfare of our volunteers while on placement.
-            </p>
-            <p>
-                Also, two of our English-speaking directors, Kevin Alderson and Hannah Price, have spent time
-                in Ghana as volunteers themselves. Kevin was involved mainly in building, but also did some teaching.
-                Hannah is a medical doctor and volunteered in a hospital. Both directors are willing to respond to
-                any queries concerning these particular placements or, indeed, any aspect of volunteering
-                with Greenfield Africa.
-            </p>
-
-            <p><b>New destinations for 2024!</b> Come and volunteer in Ghana, Kenya or Malawi and make a world of difference
-               to the disadvantaged communities in Africa! Our volunteer programmes include working on a variety of
-               activities as follows:
-            </p>
-
-            <ul>
-                <li>Building & Refurbishment</li>
-                <li>Medical & Healthcare</li>
-                <li>Teaching & Orphanage Childcare</li>
-                <li>Sports Coaching & Development</li>
-                <li>Dance, Music & Art</li>
-            </ul>
-
-            <p>
-                Volunteers with, or without, expertise in these fields are ALL welcome, as there are a variety of
-                levels in which assistance can be given. Volunteers may be allowed to be involved in more than
-                one project during their visit, subject to their length of stay, placement availability, distance between
-                projects, etc. Please note that volunteering opportunities may vary between destinations, and these
-                may vary over time. For example, building and refurbishment projects are not necessarily continuous in
-                a particular destination.
-            </p>
+            {% include 'subtemplates/volunteerpanel.html' %}
         </div>
-        <!-- /.VOLUNTEERING PANEL #2 -->
-
-        <!-- DONATION PANEL #2 -->
-        <div class="general-panel green-panel flex-with-text d-none d-md-block d-md-none">
-            <div class="uppercase panel-title">Donate to our causes!</div>
-            <p>
-                We give grants to various projects in the country where we have our volunteer programmes. These
-                tend to be for projects that are too remote to send volunteers to, or to top up more expensive
-                projects, for example to pay for building materials, where volunteer fees do not fully cover the
-                costs. If you are not able to volunteer, please consider making a donation.
-            </p>
-            <p class="inline">
-                You can donate <a class="general-link" href="{{ url_for('donate') }}"><b>here.</b></a>
-            </p>
-        </div>
-        <!-- /.DONATION PANEL #2 -->
-
+        <!-- /.TEXT PANEL - VOLUNTEER #2 -->
     </div>
 
 </section>
