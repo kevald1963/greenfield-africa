@@ -261,7 +261,7 @@ footer {
     height: 500px;
     max-width: 100%;
     min-width: 88%;
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
