@@ -286,7 +286,7 @@ footer {
 }
 
 .general-panel {
-    max-width: 576px;
+    /* max-width: 576px; */
     background-color: green;
     color: white;
     margin: auto;
@@ -306,8 +306,8 @@ footer {
 }
 
 .orange-panel {
-    background-color: #f0ad4e;
     color: black;
+    background-color: #f0ad4e;
 }
 
 .green-panel {
