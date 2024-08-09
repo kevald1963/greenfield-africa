@@ -75,6 +75,11 @@ def applytovolunteer():
     return render_template("applytovolunteer.html", title="Apply to Volunteer")
 
 
+@app.route('/kenyadevelopment')
+def kenyadevelopment():
+    return render_template("kenyadevelopment.html", title="Kenya - Development")
+
+
 @app.route('/donate')
 def donate():
     return render_template("donate.html", title="Donate")

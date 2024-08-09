@@ -44,7 +44,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                             <!-- HOME -->
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
@@ -88,6 +87,18 @@
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="{{ url_for('feescosts') }}"><span>Fees & Costs</span></a></li>
                                     <li><a class="dropdown-item highlight-text" href="{{ url_for('applytovolunteer') }}"><span><b>Apply to Volunteer</b></span></a></li>
+                                </ul>
+                            </li>
+
+                            <!-- DEVELOPMENT -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Development
+                                </a>
+                                <ul class="dropdown-menu" data-bs-theme="light">
+                                    <li><a class="dropdown-item" href="{{ url_for('ghana') }}">Ghana</a></li>
+                                    <li><a class="dropdown-item" href="{{ url_for('kenyadevelopment') }}">Kenya</a></li>
+                                    <li><a class="dropdown-item" href="{{ url_for('malawi') }}">Malawi (upcoming)</a></li>
                                 </ul>
                             </li>
                         </ul>
