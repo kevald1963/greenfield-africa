@@ -75,9 +75,25 @@ def applytovolunteer():
     return render_template("applytovolunteer.html", title="Apply to Volunteer")
 
 
-@app.route('/kenyadevelopment')
-def kenyadevelopment():
-    return render_template("kenyadevelopment.html", title="Kenya - Development")
+@app.route('/alldevelopment')
+def alldevelopment():
+    return render_template("alldevelopment.html", title="Development Funding")
+
+
+@app.route('/dev_iddrisu_school')
+def dev_iddrisu_school():
+    return render_template("dev_iddrisu_school.html", title="Iddrisu-Krom School Development")
+
+
+@app.route('/dev_peki_tsame_school')
+def dev_peki_tsame_school():
+    return render_template("dev_peki_tsame_school.html", title="Peki-Tsame School Development")
+
+
+
+@app.route('/dev_refurbishment_after_flood')
+def dev_refurbishment_after_flood():
+    return render_template("dev_refurbishment_after_flood.html", title="Greencard School Refurbishment")
 
 
 @app.route('/donate')

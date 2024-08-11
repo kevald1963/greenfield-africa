@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <!--  PANEL -->
+        <div class="general-panel orange-panel flex-with-text">
+            <div class="uppercase panel-title">Greenfield Development Funding</div>
+
+            <p>
+                Apart from running volunteering programmes, Greenfield Foundation provides small grants to various
+                projects in Ghana and also to our partner NGO in Kenya, Greencard Mtaani. In time, we hope to extend
+                grants to projects in Malawi. We are currently in negotiations with an NGO in that country.
+            </p>
+            <p>
+                Follow the links below to see what we have funded in Ghana and Kenya so far.
+            </p>
+
+        </div>
+        <!-- /. PANEL -->
+
+        <!-- PROJECT LINKS PANEL -->
+        <div class="general-panel green-panel flex-with-text">
+            <p>
+                GHANA PROJECTS
+            </p>
+            <ul>
+                <li><a class="general-link" href="{{ url_for('dev_iddrisu_school') }}">Extension & refurbishment of village school at Iddrisu-Krom, Afram Plains.</a></li>
+                <li><a class="general-link" href="{{ url_for('dev_peki_tsame_school') }}">Building of Day Care Centre at Peki Tsame Primary School, Volta Region.</a></li>
+            </ul>
+            <p>
+                KENYA PROJECTS
+            </p>
+            <ul>
+                <li><a class="general-link" href="{{ url_for('dev_refurbishment_after_flood') }}">Refurbishment Greencard Mtaaani's education centre, Kibera, Nairobi.</a></li>
+            </ul>
+
+        </div>
+        <!-- /.PROJECT LINKS PANEL -->
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+         <!-- IMAGE -->
+        <img class="group-image image-activity" src="static/images/roof_building,jpg"
+             alt="Workmen building village school roof at Iddrisu-Krom.">
+        <!-- /.IMAGE -->
+    </div>
+
+</section>
+
+{% endblock %}
