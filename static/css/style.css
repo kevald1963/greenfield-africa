@@ -51,6 +51,7 @@ ul {
     margin-bottom: 10px;
 }
 
+/* Use general-link for green panels with white typeface. */
 .general-link {
   color: white;
   background-color: transparent;
@@ -73,6 +74,35 @@ ul {
     color: white;
     background-color: transparent;
     text-decoration: underline;
+}
+
+/* Use orange-panel-link for orange panels with black typeface. */
+.orange-panel-link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-link:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.orange-panel-link:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.purple-background {
+    background-color: rebeccapurple;
 }
 
 .panel-title {

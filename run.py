@@ -25,14 +25,14 @@ def ourorganisation():
     return render_template("ourorganisation.html", title="Our Organisation")
 
 
-@app.route('/ghana')
+@app.route('/ghana_development')
 def ghana():
-    return render_template("ghana.html", title="Ghana")
+    return render_template("ghana_development.html", title="Ghana")
 
 
-@app.route('/kenya')
+@app.route('/kenya_development')
 def kenya():
-    return render_template("kenya.html", title="Kenya")
+    return render_template("kenya_development.html", title="Kenya")
 
 
 @app.route('/malawi')
@@ -75,25 +75,24 @@ def applytovolunteer():
     return render_template("applytovolunteer.html", title="Apply to Volunteer")
 
 
-@app.route('/alldevelopment')
-def alldevelopment():
-    return render_template("alldevelopment.html", title="Development Funding")
+@app.route('/all_development')
+def all_development():
+    return render_template("development_funding/all_development.html", title="Development Funding")
 
 
 @app.route('/dev_iddrisu_school')
 def dev_iddrisu_school():
-    return render_template("dev_iddrisu_school.html", title="Iddrisu-Krom School Development")
+    return render_template("development_funding/ghana_development/dev_iddrisu_school.html", title="Iddrisu-Krom School Development")
 
 
 @app.route('/dev_peki_tsame_school')
 def dev_peki_tsame_school():
-    return render_template("dev_peki_tsame_school.html", title="Peki-Tsame School Development")
-
+    return render_template("development_funding/ghana_development/dev_peki_tsame_school.html", title="Peki-Tsame School Development")
 
 
 @app.route('/dev_refurbishment_after_flood')
 def dev_refurbishment_after_flood():
-    return render_template("dev_refurbishment_after_flood.html", title="Greencard School Refurbishment")
+    return render_template("development_funding/kenya_development/dev_refurbishment_after_flood.html", title="Greencard School Refurbishment")
 
 
 @app.route('/donate')
