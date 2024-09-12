@@ -87,12 +87,9 @@ The files shown below are stored in the __Project Documentation_ folder in the G
 
 ### Media
 - The images used in this site were obtained from 
-    - [Pixabay](https://pixabay.com/en/). These are the large images on the Group pages, except for South Shields and Sunderland.
-    - Existing TWPTUG resources, mostly photos taken by activists. These are the images on the About page.
-    - [Reinventing Transport](https://www.reinventingtransport.org/) logo, shared under a Creative Commons licence. Logo is used in the audio modal as a link to the RT website. A link to the CC licence (which must be shown) is provided in the footer of the modal.
-    - The large images on the South Shields and Sunderland group pages were licensed by TWPTUG from John R. Short, author of Facebook page [See Tyne and Wear Differently](https://www.facebook.com/ctynewear/).
-- The embedded video file is from [Parliament TV](https://www.parliamentlive.tv)
-- The embedded audio file is from Reinventing Transport (above)
+    - 
+- 
+- 
 
 ### Code Snippets
 
