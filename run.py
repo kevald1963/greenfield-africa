@@ -25,14 +25,14 @@ def ourorganisation():
     return render_template("ourorganisation.html", title="Our Organisation")
 
 
-@app.route('/ghana_development')
+@app.route('/ghana')
 def ghana():
-    return render_template("ghana_development.html", title="Ghana")
+    return render_template("ghana.html", title="Ghana")
 
 
-@app.route('/kenya_development')
+@app.route('/kenya')
 def kenya():
-    return render_template("kenya_development.html", title="Kenya")
+    return render_template("kenya.html", title="Kenya")
 
 
 @app.route('/malawi')

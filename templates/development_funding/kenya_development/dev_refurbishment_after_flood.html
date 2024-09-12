@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<!-- SECTION 1 -->
 <section class="row">
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -33,15 +34,65 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <img src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/large_stones.jpg" class="group-image">
         <img src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/van_with_materials.jpg" class="group-image">
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <img src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/stored_cement_bags.jpg" class="group-image">
+        <img src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/large_stones.jpg" class="group-image">
     </div>
     <!-- /.DEVELOPMENT IMAGES -->
+</section>
+<!-- /.SECTION 1 -->
+
+<!-- SECTION 2 -->
+<section class="row">
+
+    <!-- VIDEO CAROUSEL DESCRIPTION PANEL -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="general-panel green-panel flex-with-text">
+            <p>
+                The videos below shows the school kitchen both before and after renovation. Frederick Juma, the founder
+                and CEO of Greencard Mtaani, can be heard commenting, in clear English, on both videos about the kitchen.
+            </p>
+        </div>
+    </div>
+    <!-- /.VIDEO CAROUSEL DESCRIPTION PANEL -->
+
+    <!-- VIDEO CAROUSEL -->
+    <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <div id="carousel-example" class="carousel slide carousel-video-panel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/kitchen_renovation_before.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="static/images/development_funding/kenya_development/dev_refurbishment_after_flood/kitchen_renovation_after.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.VIDEO CAROUSEL -->
 
 </section>
+<!-- /.SECTION 2 -->
 
 {% endblock %}

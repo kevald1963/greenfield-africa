@@ -22,6 +22,24 @@ ul {
 }
 */
 
+.carousel-video-panel {
+    margin-top: 15px;
+    padding: 2px 2px 5px 5px;
+    border-radius: 6px;
+}
+
+.carousel-item {
+    background-color: lightblue;
+}
+
+.carousel-control-prev-icon {
+    background-color: blue;
+}
+
+.carousel-control-next-icon {
+    background-color: blue;
+}
+
 .table {
    margin: auto;
    margin-top: 15px;
@@ -317,7 +335,6 @@ footer {
 
 .general-panel {
     /* max-width: 576px; */
-    background-color: green;
     color: white;
     margin: auto;
     margin-top: 15px;
