@@ -75,6 +75,11 @@ def applytovolunteer():
     return render_template("applytovolunteer.html", title="Apply to Volunteer")
 
 
+@app.route('/termsandconditions')
+def termsandconditions():
+    return render_template("termsandconditions.html", title="Terms and Conditions")
+
+
 @app.route('/all_development')
 def all_development():
     return render_template("development_funding/all_development.html", title="Development Funding")
