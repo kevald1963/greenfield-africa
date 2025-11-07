@@ -198,6 +198,7 @@ ul {
 
 .donation-button {
     background-color:coral;
+
     border:1px solid;
 }
 
@@ -378,11 +379,16 @@ footer {
     color: red;
 }
 
-/*-------------------------------------------------- Media Queries */
 .logo-image {
-    width: 245px;
+    width: 65px;
     height: 65px;
 }
+
+.main-container {
+    padding-top:175px;
+}
+
+/*-------------------------------------------------- Media Queries */
 
 @media (max-width:336px) {
 
