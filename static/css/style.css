@@ -9,7 +9,7 @@
 }
 
 #content-container {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 header {
@@ -28,9 +28,11 @@ ul {
     border-radius: 6px;
 }
 
+/*
 .carousel-item {
     background-color: lightblue;
 }
+*/
 
 .carousel-control-prev-icon {
     background-color: blue;
@@ -327,7 +329,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
     margin-bottom: 0;
     padding: 0;
     border-radius: 6px;
@@ -379,23 +380,30 @@ footer {
     color: red;
 }
 
+/*-------------------------------------------------- Logo */
+
 .logo-image {
-    width: 65px;
-    height: 65px;
+    width: 100px;
+    height: 100px;
 }
 
-.main-container {
-    padding-top:175px;
+.main-container-position {
+    margin-top: 35px;
 }
 
 /*-------------------------------------------------- Media Queries */
-
+/*
 @media (max-width:336px) {
 
     .logo-image {
-        max-width: 75%;
+        max-width: 50%;
+    }
+
+    .main-container-position {
+        padding-top: 15px;
     }
 }
+*/
 
 @media(max-width: 767px) {
 
