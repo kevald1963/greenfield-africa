@@ -39,7 +39,7 @@
         <div id="content-container">
 
             <!-- NAVBAR -->
-            <nav class="navbar fixed-top navbar-expand-lg border-bottom border-white" style="background-color:green;" data-bs-theme="dark">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark border-bottom border-white" style="background-color:green;" data-bs-theme="dark">
                 <div class="container-fluid">
                     <img class="logo-image" src="static/images/logo_greenfield_foundation.jpg" alt="Greenfield Foundation logo">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -97,7 +97,7 @@
 
                             <!-- DEVELOPMENT -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ url_for('all_development') }}">
+                                <a class="nav-link" aria-current="page" href="{{ url_for('all_development') }}">
                                     Development Funding
                                 </a>
                             </li>
@@ -119,8 +119,8 @@
             <!-- MAIN -->
             <main class="container">
                 <div class="main-container-position">
-                {% block content %}
-                {% endblock %}
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </main>
             <!-- /.MAIN -->

@@ -198,9 +198,13 @@ ul {
 
 /*-------------------------------------------------- Navbar */
 
+/* Navbar text set to 100% white. Default varies between 50 and 75%. */
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
 .donation-button {
     background-color:coral;
-
     border:1px solid;
 }
 
