@@ -145,6 +145,12 @@ ul {
     -o-transition: all 0.5s ease-in-out;
 }
 
+/* Use with "giftaid it" logo image to show a a light blue background with black typeface. */
+.giftaid {
+    margin-top: 0;
+    background-color: lightblue;
+}
+
 /*-------------------------------------------------- Header Alert */
 
 .alert-container .col-xs-12 {
