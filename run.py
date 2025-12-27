@@ -29,6 +29,13 @@ def ourorganisation():
 def ghana():
     return render_template("ghana.html", title="Ghana")
 
+@app.route('/volunteeringkenya')
+def volunteeringkenya():
+    return render_template("volunteeringkenya.html", title="Volunteering in Kenya")
+
+@app.route('/volunteeringghana')
+def volunteeringghana():
+    return render_template("volunteeringghana.html", title="Volunteering in Ghana")
 
 @app.route('/kenya')
 def kenya():
