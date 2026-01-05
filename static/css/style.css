@@ -71,7 +71,11 @@ ul {
     margin-bottom: 10px;
 }
 
+/*---------------------------------------------------- Link styling */
+
 /* Use general-link for green panels with white typeface. */
+/* Use orange-panel-link for orange panels with black typeface. */
+
 .general-link {
   color: white;
   background-color: transparent;
@@ -96,7 +100,6 @@ ul {
     text-decoration: underline;
 }
 
-/* Use orange-panel-link for orange panels with black typeface. */
 .orange-panel-link {
   color: black;
   background-color: transparent;
