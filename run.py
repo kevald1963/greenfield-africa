@@ -107,9 +107,9 @@ def dev_refurbishment_after_flood():
     return render_template("development_funding/kenya_development/dev_refurbishment_after_flood.html", title="Greencard School Refurbishment")
 
 
-@app.route('/donate')
-def donate():
-    return render_template("donate.html", title="Donate")
+@app.route('/supportus')
+def supportus():
+    return render_template("supportus.html", title="Support Us")
 
 
 if __name__ == '__main__':
