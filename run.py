@@ -87,6 +87,11 @@ def termsandconditions():
     return render_template("termsandconditions.html", title="Terms and Conditions")
 
 
+@app.route('/testimonials')
+def testimonials():
+    return render_template("testimonials.html", title="Volunteer Testimonials")
+
+
 @app.route('/all_development')
 def all_development():
     return render_template("development_funding/all_development.html", title="Development Funding")
